@@ -73,4 +73,8 @@ app.post('/api/produtos', (req, res) => {
   }
 })
 
+app.get('/user', (req, res) => {
+  res.status(200).json({ msg: 'User route' });
+});
+
 module.exports = app;
